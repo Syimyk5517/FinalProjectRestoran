@@ -1,0 +1,19 @@
+package com.example.finalprojectrestoran.dto.requests;
+
+import com.example.finalprojectrestoran.entity.enums.Role;
+
+import java.time.LocalDate;
+
+public record UserRequest(
+        String firstName,
+        String lastName,
+        LocalDate dateOfBirth,
+        String email,
+        String password,
+        String phoneNumber,
+        Role role,
+        Byte experience,
+        Long restaurantId
+
+) {
+}
